@@ -16,7 +16,7 @@ end
 
 function M.build_vertical_line_symbol(width, start, body, end_)
   local text = { "" }
-  for i = 2, width - 1 do
+  for _ = 2, width - 1 do
     text[1] = text[1] .. body
   end
   text[1] = start .. text[1] .. end_
@@ -24,7 +24,7 @@ function M.build_vertical_line_symbol(width, start, body, end_)
 end
 
 function M.build_horizontal_line_symbol(height, start, body, end_)
-  text = { "" }
+  local text = { "" }
   for i = 2, height - 1 do
     text[i] = body
   end
