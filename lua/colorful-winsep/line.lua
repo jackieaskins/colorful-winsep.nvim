@@ -18,6 +18,7 @@ function M:create_line()
     opts = {
       style = "minimal",
       relative = "editor",
+      border = "none",
       zindex = 1,
       focusable = false,
       height = 1,
